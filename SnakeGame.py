@@ -8,7 +8,7 @@ def collide(x1, x2, y1, y2, w1, w2, h1, h2):
 		return False
 
 def die(screen, score):
-	f=pygame.font.SysFont('times bold', 30);t=f.render('Sizning: '+str(score), True, (255,255,255));screen.blit(t, (10, 270));pygame.display.update();pygame.time.wait(2000);sys.exit(0)
+	f=pygame.font.SysFont('times bold', 30);t=f.render('Sizning Balingiz: '+str(score), True, (255,255,255));screen.blit(t, (10, 270));pygame.display.update();pygame.time.wait(2000);sys.exit(0)
 xs = [290, 290, 290, 290, 290];ys = [290, 270, 250, 230, 210];dirs = 0;score = 0;
 applepos = (random.randint(0, 590), random.randint(0, 590));
 pygame.init();
